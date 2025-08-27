@@ -52,10 +52,10 @@ int main()
 
     //[1]. Creature 클래스의 객체 creature의 멤버 변수의 값을 바꿀 수 없다
     //-> Setter 접근 함수의 사용이 불가능해짐
-    creature.Setter("Rayelle"); // Compile Error
+    // creature.Setter("Rayelle"); // Compile Error
 
     //-> Getter 접근조차도 사용이 불가능해짐
-    creature.Getter(); // Compile Error
+    creature.Getter(); // Const 멤버 함수일 오버로딩 했을 경우 문제없음
 
     //->> 멤버를 바꾸지 않는 것을 확실히 하는 const 멤버 함수만 사용 가능하기 때문
     //->> 컴파일러는 멤버 값을 바꿨는가 아닌가로 판단하는 것이 아닌 멤버 함수가 const인가 아닌가로 판단함
